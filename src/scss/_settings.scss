@@ -1,0 +1,83 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-anchor: none;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 180%;
+  background: #FBFBFC;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-container {
+  overflow: hidden;
+}
+
+.is-hidden {
+  display: none !important; // stylelint-disable-line declaration-no-important
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1380px;
+  width: 100%;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.l-bold {
+  font-weight: 500;
+}
+.bold {
+  font-weight: 600;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-sm {
+  min-width: 130px;
+  min-height: 45px;
+  padding: 12px 39px;
+}
