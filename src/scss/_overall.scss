@@ -3,6 +3,7 @@
 .header {
   background-color: var(--white);
   max-height: 85px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
 }
 .header__inner {
   display: flex;
@@ -11,6 +12,9 @@
 }
 .logo {
   display: block;
+  @include lg {
+    width: 160px;
+  }
 }
 .nav {
   display: flex;
@@ -50,71 +54,11 @@
   display: none;
   @include burger;
 }
+.header-sets {
+  display: flex;
+}
 .lang-sets {
   width: 115px;
   height: 45px;
-}
-.select2-container--default .select2-selection--single {
-  border: 0;
-  border-radius: 10px;
-}
-.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
-  background: #F2F2F2;
-  border-radius: 10px;
-}
-.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
-  border-color: transparent transparent #78C273 transparent;
-  border-width: 0 4px 5px 4px;
-}
-.select2-container--open .select2-dropdown--below {
-  margin-top: 5px;
-}
-.select2-container--open .select2-dropdown--below {
-  background: #FFFFFF;
-  box-shadow: 0px 0px 20px #DCDCDC;
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 5px 0;
-}
-.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
-  color: #78C273;
-  background: unset;
-}
-.select2-container--default .select2-results__option--selected {
-  background: rgba(120, 194, 115, 0.2);
-  color: var(--black);
-}
-.select2-dropdown {
-  border: 0;
-}
-.select2-selection__rendered {
-  line-height: 45px !important;
-}
-.select2-container .select2-selection--single {
-  height: 45px !important;
-}
-.select2-selection__arrow {
-  height: 45px !important;
-}
-.select2-container .select2-selection--single .select2-selection__rendered,
-.select2-results__option {
-  padding-left: 45px;
-}
-.select2-container .select2-selection--single .select2-selection__rendered {
-  position: relative;
-}
-.select2-container .select2-selection--single .select2-selection__rendered::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 5px;
-  transform: translateY(-50%);
-  width: 25px;
-  height: 25px;
-  background: url(../img/lang.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-  right: 5px;
+  margin-right: 25px;
 }
